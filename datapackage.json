@@ -5,9 +5,10 @@
       "url": "http://opendatacommons.org/licenses/pddl/"
     }
   ],
-  "name": "gdp-uk",
+  "name": "transform-example-gdp-uk",
   "resources": [
     {
+      "name": "annual",
       "path": "annual.csv",
       "schema": {
         "fields": [
@@ -48,7 +49,7 @@
       "web": "http://www.ons.gov.uk/ons/datasets-and-tables/downloads/csv.csv?dataset=pgdp"
     }
   ],
-  "title": "UK Gross Domestic Product (GDP)",
+  "title": "Example Aggregation on UK Gross Domestic Product (GDP)",
   "views": [
     {
       "id": "Graph",
@@ -60,6 +61,22 @@
         ]
       },
       "type": "Graph"
+    },
+    {
+      "name": "table-view-aggregation",
+      "specType": "table",
+      "resources": [
+        {
+          "name": "annual",
+          "transform": [
+            {
+              "type": "aggregate",
+              "fields": ["GDP", "GDP_Change"],
+              "operations": ["min", "max"]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
