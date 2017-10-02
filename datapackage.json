@@ -37,7 +37,8 @@
       },
       "sources": [
         {
-          "web": "http://www.ons.gov.uk/ons/datasets-and-tables/data-selector.html?cdid=ABMI&dataset=qna&table-id=C2"
+          "web": "http://www.ons.gov.uk/ons/datasets-and-tables/data-selector.html?cdid=ABMI&dataset=qna&table-id=C2",
+          "title": "unkown"
         }
       ]
     }
@@ -46,7 +47,8 @@
     {
       "homepage": "http://www.ons.gov.uk/ons/rel/gva/gross-domestic-product--preliminary-estimate/q4-2012/tsd---preliminary-estimate-of-gdp-q4-2012.html",
       "name": "Office for National Statistics - GDP Time Series",
-      "web": "http://www.ons.gov.uk/ons/datasets-and-tables/downloads/csv.csv?dataset=pgdp"
+      "web": "http://www.ons.gov.uk/ons/datasets-and-tables/downloads/csv.csv?dataset=pgdp",
+      "title": "Office for National Statistics - GDP Time Series"
     }
   ],
   "title": "Example Aggregation on UK Gross Domestic Product (GDP)",
@@ -71,8 +73,14 @@
           "transform": [
             {
               "type": "aggregate",
-              "fields": ["GDP", "GDP_Change"],
-              "operations": ["min", "max"]
+              "fields": [
+                "GDP",
+                "GDP_Change"
+              ],
+              "operations": [
+                "min",
+                "max"
+              ]
             }
           ]
         }
