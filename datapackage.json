@@ -1,8 +1,9 @@
 {
-  "licenses": [
+  "licensces": [
     {
-      "id": "odc-pddl",
-      "url": "http://opendatacommons.org/licenses/pddl/"
+      "name": "ODC-PDDL-1.0",
+      "path": "http://opendatacommons.org/licenses/pddl/",
+      "title": "Open Data Commons Public Domain Dedication and License v1.0"
     }
   ],
   "name": "transform-example-gdp-uk",
@@ -46,7 +47,7 @@
     {
       "homepage": "http://www.ons.gov.uk/ons/rel/gva/gross-domestic-product--preliminary-estimate/q4-2012/tsd---preliminary-estimate-of-gdp-q4-2012.html",
       "name": "Office for National Statistics - GDP Time Series",
-      "web": "http://www.ons.gov.uk/ons/datasets-and-tables/downloads/csv.csv?dataset=pgdp",
+      "path": "http://www.ons.gov.uk/ons/datasets-and-tables/downloads/csv.csv?dataset=pgdp",
       "title": "Office for National Statistics - GDP Time Series"
     }
   ],
